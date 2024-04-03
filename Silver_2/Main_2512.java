@@ -33,14 +33,14 @@ public class Main_2512 {
         int end = budgets[N - 1];
         int mid = 0;
 
-        while (start < end) {
+        while (start <= end) {
             mid = (start + end) / 2;
             int sum = sum(mid);
-            if (totalAmount > sum) start++;
-            else if (totalAmount < sum) end--;
+            if (totalAmount > sum) start = mid + 1;
+            else if (totalAmount < sum) end = mid - 1;
             else break;
         }
-        System.out.println(mid);
+        System.out.println((start + end) / 2);
     }
 
     private static int sum(int upperLimit) {
