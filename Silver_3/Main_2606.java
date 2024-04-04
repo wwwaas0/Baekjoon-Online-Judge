@@ -37,10 +37,6 @@ public class Main_2606 {
         for (ArrayList<Integer> connectedNodes : nodes) {
             Collections.sort(connectedNodes);
         }
-        for (ArrayList<Integer> connectedNodes : nodes) {
-            for (int node : connectedNodes) {
-            }
-        }
 
         //BFS
         // 1번 컴퓨터가 바이러스에 걸림
